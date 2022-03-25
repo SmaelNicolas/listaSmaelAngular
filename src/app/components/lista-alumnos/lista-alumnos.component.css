@@ -29,3 +29,7 @@
 .becado {
   background-color: rgb(17, 248, 36);
 }
+
+.valInsuficiente {
+  text-transform: uppercase;
+}

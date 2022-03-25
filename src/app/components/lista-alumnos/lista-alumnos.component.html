@@ -6,8 +6,9 @@
         <p class="info">{{alumno.edad}}</p>
         <p class="info">{{alumno.curso}}</p>
         <p [ngClass]=" alumno.nota > 6 ? 'info aprobado' : 'info desaprobado' ">{{alumno.nota}}</p>
-        <p [ngClass]=" alumno.valoraciones > 3 ? 'info' : 'info' " *ngIf="alumno.valoraciones > 2">
+        <p [ngClass]=" alumno.valoraciones < 3 ? 'info valInsuficiente' : 'info' " *ngIf="alumno.valoraciones > 2">
             {{alumno.valoraciones}}</p>
-        <p [ngClass]=" alumno.valoraciones > 3 ? 'info' : 'info' " *ngIf="alumno.valoraciones < 3">Insuficientes</p>
+        <p [ngClass]=" alumno.valoraciones < 3 ? 'info valInsuficiente' : 'info' " *ngIf="alumno.valoraciones < 3">
+            Insuficientes</p>
         <p [ngClass]=" alumno.beca ? 'info becado' : 'info noBecado' "></p>
     </div>
