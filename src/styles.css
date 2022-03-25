@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: calc(100vw - (100vw - 100%));
+  min-height: 100vh;
+  background: #b3afaf;
+}
+
+.info {
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid black;
+}

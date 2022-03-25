@@ -1,0 +1,31 @@
+.alumnos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.lista {
+  list-style: none;
+  background-color: white;
+}
+
+.aprobado {
+  color: rgb(24, 128, 24);
+  height: 600;
+  background-color: rgba(128, 128, 128, 0.281);
+}
+
+.desaprobado {
+  color: rgb(245, 12, 12);
+  height: 600;
+}
+
+.noBecado {
+  background-color: rgb(238, 50, 50);
+}
+
+.becado {
+  background-color: rgb(17, 248, 36);
+}
