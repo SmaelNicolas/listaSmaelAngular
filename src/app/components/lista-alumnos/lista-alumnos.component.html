@@ -10,5 +10,6 @@
             {{alumno.valoraciones}}</p>
         <p [ngClass]=" alumno.valoraciones < 3 ? 'info valInsuficiente' : 'info' " *ngIf="alumno.valoraciones < 3">
             Insuficientes</p>
-        <p [ngClass]=" alumno.beca ? 'info becado' : 'info noBecado' "></p>
+        <p [ngClass]=" alumno.beca ? 'info becado' : 'info noBecado' " *ngIf="alumno.beca === true">SI</p>
+        <p [ngClass]=" alumno.beca ? 'info becado' : 'info noBecado' " *ngIf="alumno.beca === false">NO</p>
     </div>
